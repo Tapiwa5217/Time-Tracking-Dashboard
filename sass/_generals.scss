@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import "utilities";
+
+:root {
+    box-sizing: border-box;
+    Font-size: 18px; /*(card titles e.g. Work, Play)*/
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    background-color: map-get($neutral-colors, "Very dark blue" );
+    padding: 10px 20px;
+}
+
+i {
+    letter-spacing: 10px;
+    color: rgba(255, 255, 255, 0.575);
+}
+
+
