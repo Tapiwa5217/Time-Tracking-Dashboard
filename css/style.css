@@ -25,6 +25,11 @@ i {
   color: rgba(255, 255, 255, 0.575);
 }
 
+i:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
 #user-info {
   background-color: #1c1f4a;
   border-radius: 15px;
@@ -52,7 +57,7 @@ i {
 #user-info #report-for h3 {
   font-weight: 300;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.664);
+  color: #bdc1ff;
 }
 
 #user-info #report-for h3 span {
@@ -73,8 +78,15 @@ i {
 #user-info #periods a {
   text-decoration: none;
   padding: 10px;
-  color: rgba(255, 255, 255, 0.479);
-  transition: 2s ease;
+  color: #bdc1ff;
+}
+
+#user-info #periods a.active {
+  color: #fff;
+}
+
+#user-info #periods a:hover {
+  color: #fff;
 }
 
 #main-body {
@@ -123,7 +135,7 @@ i {
 }
 
 #main-body .box .content-box .timeandlast p {
-  color: rgba(255, 255, 255, 0.479);
+  color: #bdc1ff;
 }
 
 #main-body .box:nth-child(1) {
@@ -206,6 +218,12 @@ i {
   }
   #whole-body #main-body .box {
     width: 100%;
+  }
+  #whole-body #main-body .box .content-box {
+    transition: 1s ease;
+  }
+  #whole-body #main-body .box .content-box:hover {
+    background-color: #6f76c8;
   }
   #whole-body #main-body .box .content-box .nameandoption {
     color: inherit;

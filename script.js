@@ -27,6 +27,8 @@ let btnDaily = document.getElementById("btn-daily");
 let btnWeekly = document.getElementById("btn-weekly");
 let btnMonthly = document.getElementById("btn-monthly");
 
+//active variables
+let currentlyActive = document.querySelector('.active');
 let active = 'weekly';
 
 let xhr = new XMLHttpRequest();
@@ -69,11 +71,14 @@ function changePeriod(data) {
 
     if (active == 'daily') {
 
+        btnDaily.classList.add('active');
+        btnWeekly.classList.remove('active');
+        btnMonthly.classList.remove('active');
         //change active color
 
-        btnDaily.style.color = '#fff';
-        btnWeekly.style.color = 'rgba(255, 255, 255, 0.479)';
-        btnMonthly.style.color = 'rgba(255, 255, 255, 0.479)';
+      //  btnDaily.style.color = '#fff';
+      //  btnWeekly.style.color = 'rgba(255, 255, 255, 0.479)';
+      //  btnMonthly.style.color = 'rgba(255, 255, 255, 0.479)';
 
       //daily data
 
@@ -106,9 +111,13 @@ function changePeriod(data) {
 
         //change active color
 
-        btnDaily.style.color = 'rgba(255, 255, 255, 0.479)';
-        btnWeekly.style.color = '#fff';
-        btnMonthly.style.color = 'rgba(255, 255, 255, 0.479)';
+        btnDaily.classList.remove('active');
+        btnWeekly.classList.add('active');
+        btnMonthly.classList.remove('active');
+
+       // btnDaily.style.color = 'rgba(255, 255, 255, 0.479)';
+      //  btnWeekly.style.color = '#fff';
+      //  btnMonthly.style.color = 'rgba(255, 255, 255, 0.479)';
 
         //weekly data
 
@@ -141,9 +150,13 @@ function changePeriod(data) {
 
         //change active color
 
-        btnDaily.style.color = 'rgba(255, 255, 255, 0.479)';
-        btnWeekly.style.color = 'rgba(255, 255, 255, 0.479)';
-        btnMonthly.style.color = '#fff';
+        btnDaily.classList.remove('active');
+        btnWeekly.classList.remove('active');
+        btnMonthly.classList.add('active');
+
+       // btnDaily.style.color = 'rgba(255, 255, 255, 0.479)';
+      //  btnWeekly.style.color = 'rgba(255, 255, 255, 0.479)';
+      //  btnMonthly.style.color = '#fff';
 
         //monthly data
 

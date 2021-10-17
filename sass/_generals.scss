@@ -24,6 +24,12 @@ body {
 i {
     letter-spacing: 10px;
     color: rgba(255, 255, 255, 0.575);
+
+    &:hover {
+        color: #fff;
+        cursor: pointer;
+    }
 }
+
 
 
